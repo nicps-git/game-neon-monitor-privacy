@@ -46,6 +46,9 @@ O App também tem uma tela de <strong>Tarefas</strong>, que mostra a temperatura
 e o estado térmico da bateria e quais aplicativos estiveram em uso, para ajudar a descobrir o
 que esquenta o aparelho. Na versão Premium, um <strong>vigia de aquecimento</strong>, que você
 liga por conta própria, guarda um registro desses dados quando a bateria passa de um limite.
+Toda essa função pode ser desligada a qualquer momento por uma chave no cartão Tarefas da aba
+Monitor: desligada, o App não lê a bateria nem os aplicativos em uso para essa função e o vigia
+de aquecimento fica parado.
 </p>
 
 <h2>2. Dados que coletamos</h2>
@@ -113,8 +116,9 @@ uma confirmação de que a compra foi concluída, para liberar os recursos Premi
   <li><strong>Acesso de uso:</strong> permissão especial do Android que você libera
       manualmente em Configurações. Permite ao App saber quais aplicativos estiveram em uso e
       por quanto tempo, apenas para a tela Tarefas e para o vigia de aquecimento. É opcional: o
-      App funciona sem ela, e você pode revogá-la a qualquer momento nas configurações do
-      Android, o que interrompe a leitura. Para mostrar o nome e o ícone dos aplicativos, o App
+      App funciona sem ela, você pode desligar a função Tarefas inteira pela chave do app e
+      pode revogá-la a qualquer momento nas configurações do Android, o que interrompe a
+      leitura. Para mostrar o nome e o ícone dos aplicativos, o App
       consulta apenas os que têm ícone na tela inicial; ele <strong>não</strong> solicita a
       permissão de listar todos os aplicativos instalados no aparelho.</li>
   <li><strong>Iniciar após reinicialização:</strong> usada para iniciar o widget apenas se
@@ -153,8 +157,9 @@ Os registros do vigia de aquecimento guardam no máximo os <strong>300 mais rece
 ao ultrapassar esse limite, os mais antigos são apagados automaticamente. Eles também ficam
 só neste aparelho, de fora do backup em nuvem e da transferência entre dispositivos. Você pode
 apagar todos os registros a qualquer momento pelo botão "Apagar capturas" na tela Tarefas, ou
-limpando os dados do App ou desinstalando-o. Revogar o Acesso de uso interrompe a leitura de
-novos dados, mas não apaga os registros já gravados — para isso, use uma das opções acima.
+limpando os dados do App ou desinstalando-o. Desligar a função Tarefas ou revogar o Acesso de
+uso interrompe a leitura de novos dados, mas não apaga os registros já gravados — para isso,
+use uma das opções acima.
 </p>
 
 <h2>6. Seus direitos (LGPD e GDPR)</h2>
