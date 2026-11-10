@@ -27,7 +27,7 @@
 <body>
 
 <h1>Política de Privacidade — Game Neon Monitor</h1>
-<p class="updated">Última atualização: 27 de agosto de 2026</p>
+<p class="updated">Última atualização: 10 de novembro de 2026</p>
 
 <p>
 Esta Política de Privacidade descreve como o aplicativo <strong>Game Neon Monitor</strong>
@@ -40,6 +40,12 @@ dos usuários. Ao instalar ou usar o App, você concorda com as práticas descri
 O Game Neon Monitor exibe um widget flutuante sobre outros aplicativos e jogos, mostrando
 temperatura da bateria e taxa de quadros (FPS) estimada, sem exigir acesso root. O App
 funciona inteiramente no seu dispositivo — não requer criação de conta nem login.
+</p>
+<p>
+O App também tem uma tela de <strong>Tarefas</strong>, que mostra a temperatura, a potência
+e o estado térmico da bateria e quais aplicativos estiveram em uso, para ajudar a descobrir o
+que esquenta o aparelho. Na versão Premium, um <strong>vigia de aquecimento</strong>, que você
+liga por conta própria, guarda um registro desses dados quando a bateria passa de um limite.
 </p>
 
 <h2>2. Dados que coletamos</h2>
@@ -57,8 +63,21 @@ funciona inteiramente no seu dispositivo — não requer criação de conta nem 
       low, temperatura e nível da bateria no início e no fim, e uma série reduzida de pontos
       usada para desenhar o gráfico do resumo. O App <strong>não</strong> registra o nome do
       jogo ou aplicativo monitorado, nem qualquer conteúdo exibido na tela.</li>
+  <li><strong>Aplicativos em atividade (tela Tarefas).</strong> Se você liberar o "Acesso de
+      uso" nas configurações do Android, o App lê do próprio sistema quais aplicativos
+      estiveram na tela ou com um serviço em primeiro plano nos últimos 30 minutos, e por
+      quanto tempo, e os mostra na tela Tarefas junto com a temperatura, a corrente, a tensão
+      e o estado térmico da bateria. Essa lista é lida e exibida na hora e <strong>não é
+      gravada</strong> pela tela Tarefas.</li>
+  <li><strong>Registros do vigia de aquecimento (Premium, opcional).</strong> Se você ligar o
+      vigia, a cada cerca de 15 minutos o App confere a bateria. Quando ela passa do limite de
+      temperatura que você escolheu, com a tela desligada e o aparelho fora da tomada, o App
+      grava no próprio aparelho um registro com data e hora, temperatura, potência e estado
+      térmico da bateria, e os nomes (identificadores de pacote) de até 12 aplicativos que
+      estavam ativos naquele momento, com o tempo de atividade de cada um. Ele pode também
+      mostrar uma notificação no aparelho com os nomes dos primeiros aplicativos da lista.</li>
 </ul>
-<p>Esses dados permanecem no dispositivo e não são enviados aos nossos servidores — não operamos servidor próprio.</p>
+<p>Esses dados permanecem no dispositivo e não são enviados aos nossos servidores — não operamos servidor próprio. A lista de aplicativos em atividade e os registros do vigia também não são enviados a terceiros, inclusive aos serviços de anúncio descritos na seção 2.2.</p>
 
 <h3>2.2. Dados coletados por terceiros integrados ao App</h3>
 
@@ -91,17 +110,27 @@ uma confirmação de que a compra foi concluída, para liberar os recursos Premi
       "Overdrive", somente após você aceitar um aviso explícito dentro do App. A captura é
       processada localmente, em baixa resolução, apenas para estimar o FPS — nunca é
       gravada, armazenada ou enviada para fora do dispositivo.</li>
-  <li><strong>Iniciar após reinicialização:</strong> usada apenas se você ativar a opção
-      Premium de início automático do widget.</li>
+  <li><strong>Acesso de uso:</strong> permissão especial do Android que você libera
+      manualmente em Configurações. Permite ao App saber quais aplicativos estiveram em uso e
+      por quanto tempo, apenas para a tela Tarefas e para o vigia de aquecimento. É opcional: o
+      App funciona sem ela, e você pode revogá-la a qualquer momento nas configurações do
+      Android, o que interrompe a leitura. Para mostrar o nome e o ícone dos aplicativos, o App
+      consulta apenas os que têm ícone na tela inicial; ele <strong>não</strong> solicita a
+      permissão de listar todos os aplicativos instalados no aparelho.</li>
+  <li><strong>Iniciar após reinicialização:</strong> usada para iniciar o widget apenas se
+      você ativar a opção Premium de início automático e, também, para que o vigia de
+      aquecimento volte a ser agendado após o aparelho reiniciar, apenas se você o tiver ligado.</li>
   <li><strong>Notificações:</strong> exigida pelo Android para manter o serviço em primeiro
-      plano visível ao usuário.</li>
+      plano visível ao usuário e para o aviso opcional do vigia de aquecimento.</li>
 </ul>
 
 <h2>4. Compartilhamento de dados</h2>
 <p>
 Não vendemos dados de usuários. Os únicos compartilhamentos de dados são os inerentes à
 operação do Google AdMob e do Google Play Billing, descritos na seção 2.2, regidos pelas
-próprias políticas de privacidade do Google.
+próprias políticas de privacidade do Google. As informações sobre aplicativos em atividade
+(tela Tarefas e vigia de aquecimento) não são compartilhadas com ninguém: permanecem no
+aparelho.
 </p>
 
 <h2>5. Retenção de dados</h2>
@@ -118,6 +147,14 @@ Sessões com menos de 60 segundos são descartadas e nunca chegam a ser gravadas
 entre dispositivos do Android, de modo que não é copiado para outro celular nem para a sua
 conta Google. Para apagar todo o histórico a qualquer momento, basta limpar os dados do App
 nas configurações do Android ou desinstalá-lo.
+</p>
+<p>
+Os registros do vigia de aquecimento guardam no máximo os <strong>300 mais recentes</strong>:
+ao ultrapassar esse limite, os mais antigos são apagados automaticamente. Eles também ficam
+só neste aparelho, de fora do backup em nuvem e da transferência entre dispositivos. Você pode
+apagar todos os registros a qualquer momento pelo botão "Apagar capturas" na tela Tarefas, ou
+limpando os dados do App ou desinstalando-o. Revogar o Acesso de uso interrompe a leitura de
+novos dados, mas não apaga os registros já gravados — para isso, use uma das opções acima.
 </p>
 
 <h2>6. Seus direitos (LGPD e GDPR)</h2>
@@ -149,7 +186,7 @@ próprias ferramentas do Google:
       acesse <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">myaccount.google.com/data-and-privacy</a>
       com a conta Google usada no dispositivo.</li>
   <li><strong>Dados locais do App</strong> (preferências do widget, status Premium,
-      histórico de sessões): ficam só no seu dispositivo. Desinstalar o App ou limpar seus
+      histórico de sessões, registros do vigia de aquecimento): ficam só no seu dispositivo. Desinstalar o App ou limpar seus
       dados nas configurações do Android remove tudo imediatamente, sem necessidade de nos
       contatar.</li>
 </ul>
